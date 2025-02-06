@@ -1,0 +1,34 @@
+﻿@model List<Contact>
+@{
+    ViewData["Title"] = "Contact Manager";
+}
+
+
+
+<!--Add Contact Link-->
+<a asp-controller="Contact" asp-action="Add">Add Contact</a>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <!--Table Headers-->
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--Iterates over each contact, places them in table row-->
+        @foreach (var contact in Model) {
+            <tr>
+                <td><a asp-controller="Contact" asp-action="Edit" asp-route-id="@contact.ContactId">@contact.FirstName</a></td> <!--needs link-->
+                <td><a asp-controller="Contact" asp-action="Edit" asp-route-id="@contact.ContactId">@contact.LastName</a></td>  <!--needs link-->
+                <td>@contact.PhoneNumber</td>
+                <td>@contact.Email</td>
+                <td>@contact.Category.CategoryName</td>
+            </tr>
+        }
+    </tbody>
+</table>
