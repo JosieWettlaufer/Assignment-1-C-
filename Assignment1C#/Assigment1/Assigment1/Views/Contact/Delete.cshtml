@@ -1,0 +1,15 @@
+﻿@model Assigment1.Models.Contact;
+@{
+    ViewBag.Title = "Delete Contact";
+}
+
+<h2>Delete Contact</h2>
+<h4>Do you really want to delete <strong>@Model.FirstName @Model.LastName</strong>?</h4>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="ContactId" />
+
+    <button type="submit" class="btn btn-dark">Yes</button>
+    <a asp-controller="Home" asp-action="Index"
+        class="btn btn-dark">No</a>
+</form>

@@ -1,0 +1,30 @@
+﻿@model List<Contact>
+@{
+    ViewData["Title"] = "Contact Manager";
+}
+
+
+
+<!--Add Contact Link-->
+
+<ul class="list-group">
+    <li class="list-group-item"><span class="label"><a asp-controller="Contact" asp-action="Add">Add Contact</a></li>
+    <li class="list-group-item">
+        <strong>
+            <span class="label">First Name</span><span class="label">Last Name</span>
+            <span class="label">Phone</span><span class="label">Email</span>
+            Category
+        </strong>
+    </li>
+    <!--Iterates over each contact, places them in table row-->
+    @foreach (var contact in Model)
+    {
+        <li class="list-group-item">
+            <span class="label"><a asp-controller="Contact" asp-action="Details" asp-route-id="@contact.ContactId">@contact.FirstName</a></span>
+            <span class="label"><a asp-controller="Contact" asp-action="Details" asp-route-id="@contact.ContactId">@contact.LastName</a></span>
+            <span class="label">@contact.PhoneNumber</span>
+            <span class="label">@contact.Email</span>
+            @contact.Category.CategoryName
+        </li>
+    }
+</ul>

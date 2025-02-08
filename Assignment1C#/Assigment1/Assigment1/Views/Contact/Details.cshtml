@@ -1,0 +1,29 @@
+﻿@model Assigment1.Models.Contact;
+@{
+    string title = "Contact " + ViewBag.Action;
+    ViewBag.Title = title;
+}
+
+<h3>@ViewBag.Title</h3>
+
+<ul class="list-group">
+    <li class="list-group-item"><span class="label">Name:</span> @Model.FirstName @Model.LastName</li>
+    <li class="list-group-item"><span class="label">Phone:</span> @Model.PhoneNumber</li>
+    <li class="list-group-item"><span class="label">Email:</span> @Model.Email</li>
+    <li class="list-group-item"><span class="label">Category:</span> @Model.Category.CategoryName</li>
+    <li class="list-group-item"><span class="label">Organization:</span> @Model.Organization</li>
+    <li class="list-group-item"><span class="label">Date added:</span> @Model.DateAdded.ToString()</li>
+    <li class="list-group-item">
+        <form asp-action="">
+            <a asp-controller="Contact" asp-action="Edit" asp-route-id="@Model.ContactId"
+               class="btn btn-dark">Edit</a>
+            <a asp-controller="Contact" asp-action="Delete" asp-route-id="@Model.ContactId"
+               class="btn btn-dark">Delete</a>
+            <a asp-controller="Home" asp-action="Index"
+               class="btn btn-dark">Home</a>
+        </form>
+    </li>
+</ul>
+    
+    
+
