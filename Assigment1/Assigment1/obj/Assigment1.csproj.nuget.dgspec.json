@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wettl\\OneDrive\\Desktop\\Assignment1C#\\Assigment1\\Assigment1\\Assigment1.csproj": {}
+    "C:\\Users\\wettl\\OneDrive\\Desktop\\Java Final Project\\Assignment-1-C-\\Assigment1\\Assigment1\\Assigment1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wettl\\OneDrive\\Desktop\\Assignment1C#\\Assigment1\\Assigment1\\Assigment1.csproj": {
+    "C:\\Users\\wettl\\OneDrive\\Desktop\\Java Final Project\\Assignment-1-C-\\Assigment1\\Assigment1\\Assigment1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wettl\\OneDrive\\Desktop\\Assignment1C#\\Assigment1\\Assigment1\\Assigment1.csproj",
+        "projectUniqueName": "C:\\Users\\wettl\\OneDrive\\Desktop\\Java Final Project\\Assignment-1-C-\\Assigment1\\Assigment1\\Assigment1.csproj",
         "projectName": "Assigment1",
-        "projectPath": "C:\\Users\\wettl\\OneDrive\\Desktop\\Assignment1C#\\Assigment1\\Assigment1\\Assigment1.csproj",
+        "projectPath": "C:\\Users\\wettl\\OneDrive\\Desktop\\Java Final Project\\Assignment-1-C-\\Assigment1\\Assigment1\\Assigment1.csproj",
         "packagesPath": "C:\\Users\\wettl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wettl\\OneDrive\\Desktop\\Assignment1C#\\Assigment1\\Assigment1\\obj\\",
+        "outputPath": "C:\\Users\\wettl\\OneDrive\\Desktop\\Java Final Project\\Assignment-1-C-\\Assigment1\\Assigment1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
